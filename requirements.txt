@@ -1,0 +1,4 @@
+customtkinter
+pillow
+pywin32
+icoextract
