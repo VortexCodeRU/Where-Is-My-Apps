@@ -1,0 +1,39 @@
+# ЭТОТ ФАЙЛ НЕ ВХОДИТ В ФУНКЦИОНАЛ ПРОГРАММЫ !!!
+
+*.py                    linguist-language=Python
+**/*.py                 linguist-language=Python
+
+# Усиливаем для основной папки с кодом
+app/**/*.py             linguist-language=Python
+app/**/__init__.py      linguist-language=Python
+
+# ==================== Игнорируем файлы и папки, которые мешают ====================
+__pycache__/**          linguist-vendored
+build/**                linguist-vendored
+dist/**                 linguist-vendored
+*.spec                  linguist-vendored
+
+# Данные и кэш иконок
+data/icons/**           linguist-vendored
+data/*.json             linguist-vendored
+
+# Скомпилированные Python файлы
+*.pyc                   linguist-generated=true
+*.pyo                   linguist-generated=true
+*.pyd                   linguist-generated=true
+
+# Файлы сборки и установщика
+*.exe                   linguist-vendored
+*.dat                   linguist-vendored
+*.iss                   linguist-vendored
+
+# Изображения и ассеты
+*.png                   linguist-vendored
+*.ico                   linguist-vendored
+*.bmp                   linguist-vendored
+assets/**               linguist-vendored
+screenshots/**          linguist-vendored
+
+# Документация
+README.md               linguist-documentation
+.gitattributes          linguist-documentation
